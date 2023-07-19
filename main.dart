@@ -10,7 +10,7 @@ void main(List<String> args) {
   // print("${contact1.name} ${contact1.family}: ${contact1.phones[0].phone}");
 
   contact1.showInfo();
-
+  
   Contact contact2 = Contact();
   contact2.name = "mohammad";
   contact2.family = "mahdavi";
@@ -21,19 +21,18 @@ void main(List<String> args) {
 
   contact2.showInfo();
   String n = contact2.getName();
-  print(n);//mohammad
+  print(n); //mohammad
 
   contact2.setName("mahdi");
   n = contact2.getName();
-  print(n);//mahdi
-
+  print(n); //mahdi
 }
 
 class Contact {
   String name = "";
   String family = "";
   List<Phone> phones = [];
-
+  
   void showInfo() {
     print("$name $family: ${phones[0].phone}");
   }
